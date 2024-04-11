@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국어</title>
+    <link rel="stylesheet" href="benkyo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="toolbar">
+        <label for="category-select">Chọn thể loại:</label>
+        <select id="category-select" onchange="selectCategory()">
+          <option value="boPhanCoThe">Cơ thể</option>
+          <option value="diadiem">Địa điểm</option>
+          <option value="dongtu">Động từ</option>
+          <option value="dongVat">Động vật 1</option>
+          <option value="dongVatDuoiNuoc">Động vật 2</option>
+          <option value="dungCuHocTap">Dụng cụ học</option>
+          <option value="dungCuTrongNha">Dụng cụ nhà</option>
+          <option value="giaVi">Gia vị</option>
+          <option value="hoa">Các loại hoa</option>
+          <option value="hoaQua">Hoa quả</option>
+          <option value="kazoku">Gia đình</option>
+          <option value="nghenghiep">Nghề nghiệp</option>
+          <option value="ngayTrongThang">Thứ trong tuần</option>
+          <option value="phuongTienGiaoThong">Phương tiện</option>
+          <option value="quanAo">Quần áo</option>
+          <option value="soDem">Số đếm</option>
+          <option value="thoiGian">Thời gian</option>
+          <option value="thoiGian1">Thời gian 2</option>
+          <option value="vi">Vị</option>
+          <!-- Add more options for other categories -->
+        </select>
+      </div>
+      <h1 class="title">
+        아래의 한국어에 해당하는 베트남어 단어를 입력하십시오
+      </h1>
+      <div id="word-container">
+        <p id="korean-word"></p>
+        <input
+          type="text"
+          id="vietnamese-input"
+          placeholder="베트남어 단어를 입력하십시오..."
+        />
+        <button onclick="checkVietnamese()">그래</button>
+      </div>
+      <p id="message"></p>
+      <div class="design-by">Design by Tuaw_And</div>
+    </div>
+
+    <script src="benkyo.js"></script>
+  </body>
+</html>
